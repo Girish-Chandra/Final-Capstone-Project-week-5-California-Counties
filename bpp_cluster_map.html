@@ -1,0 +1,1912 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_ae5657ce13ec4e00b2039032b4e5f3ec {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_ae5657ce13ec4e00b2039032b4e5f3ec" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_ae5657ce13ec4e00b2039032b4e5f3ec = L.map(
+                                  'map_ae5657ce13ec4e00b2039032b4e5f3ec',
+                                  {center: [33.9419393,-118.43808037530732],
+                                  zoom: 7,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_2fc311036b4e4d2fab8d6048bcc4d0cc = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_ae5657ce13ec4e00b2039032b4e5f3ec);
+        
+    
+            var circle_marker_621bd083e0da43ecaa4419a9f23b1aff = L.circleMarker(
+                [37.6469,-121.8889],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#80ffb4",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#80ffb4",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10.201740109059958,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_ae5657ce13ec4e00b2039032b4e5f3ec);
+            
+    
+            var popup_987dba26e8974c0f98e2fde3c964056e = L.popup({maxWidth: '300'});
+
+            
+                var html_2a81071ec7ff418a8886c1b68c017354 = $('<div id="html_2a81071ec7ff418a8886c1b68c017354" style="width: 100.0%; height: 100.0%;">Cluster 4, Alameda county</div>')[0];
+                popup_987dba26e8974c0f98e2fde3c964056e.setContent(html_2a81071ec7ff418a8886c1b68c017354);
+            
+
+            circle_marker_621bd083e0da43ecaa4419a9f23b1aff.bindPopup(popup_987dba26e8974c0f98e2fde3c964056e);
+
+            
+        
+    
+            var circle_marker_5cc2cd989bfb43a7a8ee56c287cf5853 = L.circleMarker(
+                [38.4464,-120.6511],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 8.7183672106498,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_ae5657ce13ec4e00b2039032b4e5f3ec);
+            
+    
+            var popup_83f3fc79b3d54b7fae1b7452a826097f = L.popup({maxWidth: '300'});
+
+            
+                var html_e53ae17c5cf549e1aa8619908949f26f = $('<div id="html_e53ae17c5cf549e1aa8619908949f26f" style="width: 100.0%; height: 100.0%;">Cluster 1, Amador county</div>')[0];
+                popup_83f3fc79b3d54b7fae1b7452a826097f.setContent(html_e53ae17c5cf549e1aa8619908949f26f);
+            
+
+            circle_marker_5cc2cd989bfb43a7a8ee56c287cf5853.bindPopup(popup_83f3fc79b3d54b7fae1b7452a826097f);
+
+            
+        
+    
+            var circle_marker_09352168a82648ee8e4a5b367962828e = L.circleMarker(
+                [39.6669,-121.6007],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#d4dd80",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#d4dd80",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 17.118647448707854,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_ae5657ce13ec4e00b2039032b4e5f3ec);
+            
+    
+            var popup_66cbd50d80e947f79871d02bc8329e83 = L.popup({maxWidth: '300'});
+
+            
+                var html_6ef024acaa714232bb9e4d166effa2b6 = $('<div id="html_6ef024acaa714232bb9e4d166effa2b6" style="width: 100.0%; height: 100.0%;">Cluster 5, Butte county</div>')[0];
+                popup_66cbd50d80e947f79871d02bc8329e83.setContent(html_6ef024acaa714232bb9e4d166effa2b6);
+            
+
+            circle_marker_09352168a82648ee8e4a5b367962828e.bindPopup(popup_66cbd50d80e947f79871d02bc8329e83);
+
+            
+        
+    
+            var circle_marker_c30e490e1aec4dff9a86c3f28922769f = L.circleMarker(
+                [38.2046,-120.5541],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 3.5948192432591908,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_ae5657ce13ec4e00b2039032b4e5f3ec);
+            
+    
+            var popup_b1375334ee6548f0bcd1237f8d8ae929 = L.popup({maxWidth: '300'});
+
+            
+                var html_5021b77aaf994957b56fc2bb1908cd1d = $('<div id="html_5021b77aaf994957b56fc2bb1908cd1d" style="width: 100.0%; height: 100.0%;">Cluster 0, Calaveras county</div>')[0];
+                popup_b1375334ee6548f0bcd1237f8d8ae929.setContent(html_5021b77aaf994957b56fc2bb1908cd1d);
+            
+
+            circle_marker_c30e490e1aec4dff9a86c3f28922769f.bindPopup(popup_b1375334ee6548f0bcd1237f8d8ae929);
+
+            
+        
+    
+            var circle_marker_2327f299f61747d39bdabfcac593e35e = L.circleMarker(
+                [39.1775,-122.237],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 16.35255971821873,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_ae5657ce13ec4e00b2039032b4e5f3ec);
+            
+    
+            var popup_83aa5c15f4cc4a74aac6b0b621882ed5 = L.popup({maxWidth: '300'});
+
+            
+                var html_df0b474a31ce4202870e615976eb2a86 = $('<div id="html_df0b474a31ce4202870e615976eb2a86" style="width: 100.0%; height: 100.0%;">Cluster 0, Colusa county</div>')[0];
+                popup_83aa5c15f4cc4a74aac6b0b621882ed5.setContent(html_df0b474a31ce4202870e615976eb2a86);
+            
+
+            circle_marker_2327f299f61747d39bdabfcac593e35e.bindPopup(popup_83aa5c15f4cc4a74aac6b0b621882ed5);
+
+            
+        
+    
+            var circle_marker_01a13369a7074e0992f4bf23645b396e = L.circleMarker(
+                [37.9191,-121.9278],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff7e41",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff7e41",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 7.0449730412952505,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_ae5657ce13ec4e00b2039032b4e5f3ec);
+            
+    
+            var popup_01f5a9baf9254e5b8132e08fbb7ff7ff = L.popup({maxWidth: '300'});
+
+            
+                var html_e1759032591143648a99d8cba2edcaff = $('<div id="html_e1759032591143648a99d8cba2edcaff" style="width: 100.0%; height: 100.0%;">Cluster 6, Contra Costa county</div>')[0];
+                popup_01f5a9baf9254e5b8132e08fbb7ff7ff.setContent(html_e1759032591143648a99d8cba2edcaff);
+            
+
+            circle_marker_01a13369a7074e0992f4bf23645b396e.bindPopup(popup_01f5a9baf9254e5b8132e08fbb7ff7ff);
+
+            
+        
+    
+            var circle_marker_3c7123469a4040f78bf9990c71c2a08f = L.circleMarker(
+                [41.7431,-123.8972],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 13.734880344710756,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_ae5657ce13ec4e00b2039032b4e5f3ec);
+            
+    
+            var popup_de2d278f15564384afc180e08f20e8ad = L.popup({maxWidth: '300'});
+
+            
+                var html_a1a0908cd9cb42a8acb868e601957e9e = $('<div id="html_a1a0908cd9cb42a8acb868e601957e9e" style="width: 100.0%; height: 100.0%;">Cluster 1, Del Norte county</div>')[0];
+                popup_de2d278f15564384afc180e08f20e8ad.setContent(html_a1a0908cd9cb42a8acb868e601957e9e);
+            
+
+            circle_marker_3c7123469a4040f78bf9990c71c2a08f.bindPopup(popup_de2d278f15564384afc180e08f20e8ad);
+
+            
+        
+    
+            var circle_marker_f4a347b56e674937a369f35c0cc8046b = L.circleMarker(
+                [38.7787,-120.5247],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#2adddd",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#2adddd",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5.752716824873107,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_ae5657ce13ec4e00b2039032b4e5f3ec);
+            
+    
+            var popup_1960d3c140ef47ac97796ec580f30899 = L.popup({maxWidth: '300'});
+
+            
+                var html_d2c0fb8a9ce4447fb629618476fa4fdc = $('<div id="html_d2c0fb8a9ce4447fb629618476fa4fdc" style="width: 100.0%; height: 100.0%;">Cluster 3, El Dorado county</div>')[0];
+                popup_1960d3c140ef47ac97796ec580f30899.setContent(html_d2c0fb8a9ce4447fb629618476fa4fdc);
+            
+
+            circle_marker_f4a347b56e674937a369f35c0cc8046b.bindPopup(popup_1960d3c140ef47ac97796ec580f30899);
+
+            
+        
+    
+            var circle_marker_fb93a7931b564344b518877afa8e2d30 = L.circleMarker(
+                [36.7582,-119.6493],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10.629720583318983,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_ae5657ce13ec4e00b2039032b4e5f3ec);
+            
+    
+            var popup_fbfb24f5ccf3469ea3354c3137fee2c8 = L.popup({maxWidth: '300'});
+
+            
+                var html_40b53091458e4adcbb293dd03b01b066 = $('<div id="html_40b53091458e4adcbb293dd03b01b066" style="width: 100.0%; height: 100.0%;">Cluster 1, Fresno county</div>')[0];
+                popup_fbfb24f5ccf3469ea3354c3137fee2c8.setContent(html_40b53091458e4adcbb293dd03b01b066);
+            
+
+            circle_marker_fb93a7931b564344b518877afa8e2d30.bindPopup(popup_fbfb24f5ccf3469ea3354c3137fee2c8);
+
+            
+        
+    
+            var circle_marker_09c6fcabde6949c99a40e73f77cf5682 = L.circleMarker(
+                [39.5982,-122.392],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 11.260895005145725,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_ae5657ce13ec4e00b2039032b4e5f3ec);
+            
+    
+            var popup_e441482f84c54ef4a96b700e57c1d28d = L.popup({maxWidth: '300'});
+
+            
+                var html_200a3952e80a42dc926d83dd412db89a = $('<div id="html_200a3952e80a42dc926d83dd412db89a" style="width: 100.0%; height: 100.0%;">Cluster 1, Glenn county</div>')[0];
+                popup_e441482f84c54ef4a96b700e57c1d28d.setContent(html_200a3952e80a42dc926d83dd412db89a);
+            
+
+            circle_marker_09c6fcabde6949c99a40e73f77cf5682.bindPopup(popup_e441482f84c54ef4a96b700e57c1d28d);
+
+            
+        
+    
+            var circle_marker_b8058ffeacf3415d9daf690503291034 = L.circleMarker(
+                [40.6993,-123.8756],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 14.986812300407179,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_ae5657ce13ec4e00b2039032b4e5f3ec);
+            
+    
+            var popup_b23bbbfafe484e2e9ebec28a9b97dd2e = L.popup({maxWidth: '300'});
+
+            
+                var html_a7b0b42aaf2e4899a4e1d36da741b863 = $('<div id="html_a7b0b42aaf2e4899a4e1d36da741b863" style="width: 100.0%; height: 100.0%;">Cluster 1, Humboldt county</div>')[0];
+                popup_b23bbbfafe484e2e9ebec28a9b97dd2e.setContent(html_a7b0b42aaf2e4899a4e1d36da741b863);
+            
+
+            circle_marker_b8058ffeacf3415d9daf690503291034.bindPopup(popup_b23bbbfafe484e2e9ebec28a9b97dd2e);
+
+            
+        
+    
+            var circle_marker_8364ed08640240bfb845ea880a10779e = L.circleMarker(
+                [33.0395,-115.3654],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff7e41",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff7e41",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 8.687291455646783,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_ae5657ce13ec4e00b2039032b4e5f3ec);
+            
+    
+            var popup_d334b0c4ad7b4a2cadaf62ccea8e8f77 = L.popup({maxWidth: '300'});
+
+            
+                var html_2616fa97baf84bf6ada46b26dc9e925b = $('<div id="html_2616fa97baf84bf6ada46b26dc9e925b" style="width: 100.0%; height: 100.0%;">Cluster 6, Imperial county</div>')[0];
+                popup_d334b0c4ad7b4a2cadaf62ccea8e8f77.setContent(html_2616fa97baf84bf6ada46b26dc9e925b);
+            
+
+            circle_marker_8364ed08640240bfb845ea880a10779e.bindPopup(popup_d334b0c4ad7b4a2cadaf62ccea8e8f77);
+
+            
+        
+    
+            var circle_marker_0114f294c09644e48122ff084527e6af = L.circleMarker(
+                [36.5111,-117.4107],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 11.124725925339053,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_ae5657ce13ec4e00b2039032b4e5f3ec);
+            
+    
+            var popup_2586162679264c6c81801086a449c089 = L.popup({maxWidth: '300'});
+
+            
+                var html_a5cc263487e2402391428a2586f57830 = $('<div id="html_a5cc263487e2402391428a2586f57830" style="width: 100.0%; height: 100.0%;">Cluster 0, Inyo county</div>')[0];
+                popup_2586162679264c6c81801086a449c089.setContent(html_a5cc263487e2402391428a2586f57830);
+            
+
+            circle_marker_0114f294c09644e48122ff084527e6af.bindPopup(popup_2586162679264c6c81801086a449c089);
+
+            
+        
+    
+            var circle_marker_008828ffbd2d4c13b6e55deab1528052 = L.circleMarker(
+                [35.3429,-118.7299],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff7e41",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff7e41",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 8.403963645183039,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_ae5657ce13ec4e00b2039032b4e5f3ec);
+            
+    
+            var popup_c8decd2d243e41c2943daf9dd8b920ba = L.popup({maxWidth: '300'});
+
+            
+                var html_6b89c3361e5c447c86513aeb81c24966 = $('<div id="html_6b89c3361e5c447c86513aeb81c24966" style="width: 100.0%; height: 100.0%;">Cluster 6, Kern county</div>')[0];
+                popup_c8decd2d243e41c2943daf9dd8b920ba.setContent(html_6b89c3361e5c447c86513aeb81c24966);
+            
+
+            circle_marker_008828ffbd2d4c13b6e55deab1528052.bindPopup(popup_c8decd2d243e41c2943daf9dd8b920ba);
+
+            
+        
+    
+            var circle_marker_2d553ffd1d314161acc7201f675a8047 = L.circleMarker(
+                [36.0753,-119.8155],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#2adddd",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#2adddd",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.871014455362646,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_ae5657ce13ec4e00b2039032b4e5f3ec);
+            
+    
+            var popup_2f54c9bc1cbd4104a69c33e30689b399 = L.popup({maxWidth: '300'});
+
+            
+                var html_84afdc3ff4c64503b706c0c632755f1b = $('<div id="html_84afdc3ff4c64503b706c0c632755f1b" style="width: 100.0%; height: 100.0%;">Cluster 3, Kings county</div>')[0];
+                popup_2f54c9bc1cbd4104a69c33e30689b399.setContent(html_84afdc3ff4c64503b706c0c632755f1b);
+            
+
+            circle_marker_2d553ffd1d314161acc7201f675a8047.bindPopup(popup_2f54c9bc1cbd4104a69c33e30689b399);
+
+            
+        
+    
+            var circle_marker_c60d84692b184bc29bdee9a5d12160f5 = L.circleMarker(
+                [39.0996,-122.7532],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff7e41",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff7e41",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5.989153408075236,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_ae5657ce13ec4e00b2039032b4e5f3ec);
+            
+    
+            var popup_14e6a5492e974044849bb8adc5677053 = L.popup({maxWidth: '300'});
+
+            
+                var html_40778c8a5d474b38b21db7fc4ed4a1f4 = $('<div id="html_40778c8a5d474b38b21db7fc4ed4a1f4" style="width: 100.0%; height: 100.0%;">Cluster 6, Lake county</div>')[0];
+                popup_14e6a5492e974044849bb8adc5677053.setContent(html_40778c8a5d474b38b21db7fc4ed4a1f4);
+            
+
+            circle_marker_c60d84692b184bc29bdee9a5d12160f5.bindPopup(popup_14e6a5492e974044849bb8adc5677053);
+
+            
+        
+    
+            var circle_marker_548869b413214aac9118fb1d439c7d1c = L.circleMarker(
+                [40.6736,-120.5943],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#2adddd",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#2adddd",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4.517483739024238,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_ae5657ce13ec4e00b2039032b4e5f3ec);
+            
+    
+            var popup_8611bdb1bd3844c386cecc9d97a8394d = L.popup({maxWidth: '300'});
+
+            
+                var html_e44fa9ad102243849aae985e1a2a2dd4 = $('<div id="html_e44fa9ad102243849aae985e1a2a2dd4" style="width: 100.0%; height: 100.0%;">Cluster 3, Lassen county</div>')[0];
+                popup_8611bdb1bd3844c386cecc9d97a8394d.setContent(html_e44fa9ad102243849aae985e1a2a2dd4);
+            
+
+            circle_marker_548869b413214aac9118fb1d439c7d1c.bindPopup(popup_8611bdb1bd3844c386cecc9d97a8394d);
+
+            
+        
+    
+            var circle_marker_252a6eb3108a4e2e9405d81993a9920a = L.circleMarker(
+                [34.3207,-118.2248],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#2c7ef7",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#2c7ef7",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 13.980213731678706,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_ae5657ce13ec4e00b2039032b4e5f3ec);
+            
+    
+            var popup_6485108812f2427ebd400204effdb44a = L.popup({maxWidth: '300'});
+
+            
+                var html_0cfc04bdff954c2e8997f16a6a01a1eb = $('<div id="html_0cfc04bdff954c2e8997f16a6a01a1eb" style="width: 100.0%; height: 100.0%;">Cluster 2, Los Angeles county</div>')[0];
+                popup_6485108812f2427ebd400204effdb44a.setContent(html_0cfc04bdff954c2e8997f16a6a01a1eb);
+            
+
+            circle_marker_252a6eb3108a4e2e9405d81993a9920a.bindPopup(popup_6485108812f2427ebd400204effdb44a);
+
+            
+        
+    
+            var circle_marker_1aee5d8dc702461b878af5fbf358e999 = L.circleMarker(
+                [37.218,-119.7627],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 12.600082784968,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_ae5657ce13ec4e00b2039032b4e5f3ec);
+            
+    
+            var popup_63c0a0375c884820a8953f9e28ef634c = L.popup({maxWidth: '300'});
+
+            
+                var html_527e6594ccc74c7e8735a68e492652e7 = $('<div id="html_527e6594ccc74c7e8735a68e492652e7" style="width: 100.0%; height: 100.0%;">Cluster 1, Madera county</div>')[0];
+                popup_63c0a0375c884820a8953f9e28ef634c.setContent(html_527e6594ccc74c7e8735a68e492652e7);
+            
+
+            circle_marker_1aee5d8dc702461b878af5fbf358e999.bindPopup(popup_63c0a0375c884820a8953f9e28ef634c);
+
+            
+        
+    
+            var circle_marker_8047b1344dd841b198e4413c664d2717 = L.circleMarker(
+                [38.0734,-122.7234],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff7e41",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff7e41",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 8.152845553398585,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_ae5657ce13ec4e00b2039032b4e5f3ec);
+            
+    
+            var popup_8606997fe4084ea1998cc43c3b99420e = L.popup({maxWidth: '300'});
+
+            
+                var html_c5c161b679ee461c88600515b3c6d466 = $('<div id="html_c5c161b679ee461c88600515b3c6d466" style="width: 100.0%; height: 100.0%;">Cluster 6, Marin county</div>')[0];
+                popup_8606997fe4084ea1998cc43c3b99420e.setContent(html_c5c161b679ee461c88600515b3c6d466);
+            
+
+            circle_marker_8047b1344dd841b198e4413c664d2717.bindPopup(popup_8606997fe4084ea1998cc43c3b99420e);
+
+            
+        
+    
+            var circle_marker_355edb54691f440f923a6d19c805044d = L.circleMarker(
+                [37.5815,-119.9054],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#2adddd",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#2adddd",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4.6310504290040955,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_ae5657ce13ec4e00b2039032b4e5f3ec);
+            
+    
+            var popup_8e32e8bc3f844bbf935b4428b0b4421c = L.popup({maxWidth: '300'});
+
+            
+                var html_3576e1bbc1864c678218fbde443845d1 = $('<div id="html_3576e1bbc1864c678218fbde443845d1" style="width: 100.0%; height: 100.0%;">Cluster 3, Mariposa county</div>')[0];
+                popup_8e32e8bc3f844bbf935b4428b0b4421c.setContent(html_3576e1bbc1864c678218fbde443845d1);
+            
+
+            circle_marker_355edb54691f440f923a6d19c805044d.bindPopup(popup_8e32e8bc3f844bbf935b4428b0b4421c);
+
+            
+        
+    
+            var circle_marker_fb5d847dd5b84325a656beb0d913b361 = L.circleMarker(
+                [39.4402,-123.3915],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#2adddd",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#2adddd",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6.816378349763558,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_ae5657ce13ec4e00b2039032b4e5f3ec);
+            
+    
+            var popup_1f17eb32c4e34040a8da18aa49f95c22 = L.popup({maxWidth: '300'});
+
+            
+                var html_d66290bee4cf48468797f2059349e9ae = $('<div id="html_d66290bee4cf48468797f2059349e9ae" style="width: 100.0%; height: 100.0%;">Cluster 3, Mendocino county</div>')[0];
+                popup_1f17eb32c4e34040a8da18aa49f95c22.setContent(html_d66290bee4cf48468797f2059349e9ae);
+            
+
+            circle_marker_fb5d847dd5b84325a656beb0d913b361.bindPopup(popup_1f17eb32c4e34040a8da18aa49f95c22);
+
+            
+        
+    
+            var circle_marker_a29243b57ea44b41879dcf5e63e67195 = L.circleMarker(
+                [37.1919,-120.7177],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#2adddd",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#2adddd",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5.645318977390117,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_ae5657ce13ec4e00b2039032b4e5f3ec);
+            
+    
+            var popup_bb3ca6617cff4e43aec0813f45d12850 = L.popup({maxWidth: '300'});
+
+            
+                var html_8ae17b8051bb4d6e83c051a4eb816c81 = $('<div id="html_8ae17b8051bb4d6e83c051a4eb816c81" style="width: 100.0%; height: 100.0%;">Cluster 3, Merced county</div>')[0];
+                popup_bb3ca6617cff4e43aec0813f45d12850.setContent(html_8ae17b8051bb4d6e83c051a4eb816c81);
+            
+
+            circle_marker_a29243b57ea44b41879dcf5e63e67195.bindPopup(popup_bb3ca6617cff4e43aec0813f45d12850);
+
+            
+        
+    
+            var circle_marker_f8cee832b9a941f2ae0bc04d43abffe9 = L.circleMarker(
+                [41.5898,-120.725],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9.013558622458017,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_ae5657ce13ec4e00b2039032b4e5f3ec);
+            
+    
+            var popup_1d1e65673d5c4cb0beff38db922e3b44 = L.popup({maxWidth: '300'});
+
+            
+                var html_f0cceebe26324e9f8291eedd4fe2e65b = $('<div id="html_f0cceebe26324e9f8291eedd4fe2e65b" style="width: 100.0%; height: 100.0%;">Cluster 1, Modoc county</div>')[0];
+                popup_1d1e65673d5c4cb0beff38db922e3b44.setContent(html_f0cceebe26324e9f8291eedd4fe2e65b);
+            
+
+            circle_marker_f8cee832b9a941f2ae0bc04d43abffe9.bindPopup(popup_1d1e65673d5c4cb0beff38db922e3b44);
+
+            
+        
+    
+            var circle_marker_b5d07705db7f4527b4678695da78a37d = L.circleMarker(
+                [37.9391,-118.8868],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 7.518118178418857,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_ae5657ce13ec4e00b2039032b4e5f3ec);
+            
+    
+            var popup_999fd2b3561a4a1093fc73c05f04c75e = L.popup({maxWidth: '300'});
+
+            
+                var html_35440a284709485a9a3165a87d2b309b = $('<div id="html_35440a284709485a9a3165a87d2b309b" style="width: 100.0%; height: 100.0%;">Cluster 0, Mono county</div>')[0];
+                popup_999fd2b3561a4a1093fc73c05f04c75e.setContent(html_35440a284709485a9a3165a87d2b309b);
+            
+
+            circle_marker_b5d07705db7f4527b4678695da78a37d.bindPopup(popup_999fd2b3561a4a1093fc73c05f04c75e);
+
+            
+        
+    
+            var circle_marker_39c40d2769834ccea6298c62fb9ae03d = L.circleMarker(
+                [36.2172,-121.2392],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff7e41",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff7e41",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 11.61719973891735,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_ae5657ce13ec4e00b2039032b4e5f3ec);
+            
+    
+            var popup_d084bf14251d4d6492aa7e6276ba40bd = L.popup({maxWidth: '300'});
+
+            
+                var html_4c4bdafd1f254ae6a3c9acd31aee7235 = $('<div id="html_4c4bdafd1f254ae6a3c9acd31aee7235" style="width: 100.0%; height: 100.0%;">Cluster 6, Monterey county</div>')[0];
+                popup_d084bf14251d4d6492aa7e6276ba40bd.setContent(html_4c4bdafd1f254ae6a3c9acd31aee7235);
+            
+
+            circle_marker_39c40d2769834ccea6298c62fb9ae03d.bindPopup(popup_d084bf14251d4d6492aa7e6276ba40bd);
+
+            
+        
+    
+            var circle_marker_ce8449b48afa4eec98fcab407448ce7e = L.circleMarker(
+                [38.5065,-122.3305],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10.502197574945988,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_ae5657ce13ec4e00b2039032b4e5f3ec);
+            
+    
+            var popup_0a6b2463630f4203a16afceec37234ee = L.popup({maxWidth: '300'});
+
+            
+                var html_358757b3abeb4b94a807d2895e60f711 = $('<div id="html_358757b3abeb4b94a807d2895e60f711" style="width: 100.0%; height: 100.0%;">Cluster 1, Napa county</div>')[0];
+                popup_0a6b2463630f4203a16afceec37234ee.setContent(html_358757b3abeb4b94a807d2895e60f711);
+            
+
+            circle_marker_ce8449b48afa4eec98fcab407448ce7e.bindPopup(popup_0a6b2463630f4203a16afceec37234ee);
+
+            
+        
+    
+            var circle_marker_7bc08e255a6b4dbfa2b20ad1a1ac9d93 = L.circleMarker(
+                [39.3014,-120.7685],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff7e41",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff7e41",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 7.832411488780483,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_ae5657ce13ec4e00b2039032b4e5f3ec);
+            
+    
+            var popup_e66b7e676ea44b19ac7aea429459b8dd = L.popup({maxWidth: '300'});
+
+            
+                var html_37552beff1be497cb218981d14a88ab0 = $('<div id="html_37552beff1be497cb218981d14a88ab0" style="width: 100.0%; height: 100.0%;">Cluster 6, Nevada county</div>')[0];
+                popup_e66b7e676ea44b19ac7aea429459b8dd.setContent(html_37552beff1be497cb218981d14a88ab0);
+            
+
+            circle_marker_7bc08e255a6b4dbfa2b20ad1a1ac9d93.bindPopup(popup_e66b7e676ea44b19ac7aea429459b8dd);
+
+            
+        
+    
+            var circle_marker_928c00942a1147be85d4e18516036b13 = L.circleMarker(
+                [33.703,-117.7611],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#80ffb4",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#80ffb4",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 13.218009307567105,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_ae5657ce13ec4e00b2039032b4e5f3ec);
+            
+    
+            var popup_28a98512b1e24c5b8e67cdbbc78a9631 = L.popup({maxWidth: '300'});
+
+            
+                var html_958a96ee82464e2db2c4585ff9210381 = $('<div id="html_958a96ee82464e2db2c4585ff9210381" style="width: 100.0%; height: 100.0%;">Cluster 4, Orange county</div>')[0];
+                popup_28a98512b1e24c5b8e67cdbbc78a9631.setContent(html_958a96ee82464e2db2c4585ff9210381);
+            
+
+            circle_marker_928c00942a1147be85d4e18516036b13.bindPopup(popup_28a98512b1e24c5b8e67cdbbc78a9631);
+
+            
+        
+    
+            var circle_marker_a6f9251eb58c49139e385f7662fdca0f = L.circleMarker(
+                [39.0635,-120.7175],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 14.175234921830526,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_ae5657ce13ec4e00b2039032b4e5f3ec);
+            
+    
+            var popup_0be06517877248b9b969d5ff0a9e43c5 = L.popup({maxWidth: '300'});
+
+            
+                var html_7bdc1ec52b4c47fab78e238e89b0cb53 = $('<div id="html_7bdc1ec52b4c47fab78e238e89b0cb53" style="width: 100.0%; height: 100.0%;">Cluster 1, Placer county</div>')[0];
+                popup_0be06517877248b9b969d5ff0a9e43c5.setContent(html_7bdc1ec52b4c47fab78e238e89b0cb53);
+            
+
+            circle_marker_a6f9251eb58c49139e385f7662fdca0f.bindPopup(popup_0be06517877248b9b969d5ff0a9e43c5);
+
+            
+        
+    
+            var circle_marker_db80fa1d1e6a435ca03e9d0cd94d760b = L.circleMarker(
+                [40.0046,-120.8385],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 13.325315337198672,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_ae5657ce13ec4e00b2039032b4e5f3ec);
+            
+    
+            var popup_30d5a5573e694112b256c76b4ae66796 = L.popup({maxWidth: '300'});
+
+            
+                var html_a0b53d4159794036bcbbbc0a218c3e10 = $('<div id="html_a0b53d4159794036bcbbbc0a218c3e10" style="width: 100.0%; height: 100.0%;">Cluster 1, Plumas county</div>')[0];
+                popup_30d5a5573e694112b256c76b4ae66796.setContent(html_a0b53d4159794036bcbbbc0a218c3e10);
+            
+
+            circle_marker_db80fa1d1e6a435ca03e9d0cd94d760b.bindPopup(popup_30d5a5573e694112b256c76b4ae66796);
+
+            
+        
+    
+            var circle_marker_b547f2d0131a42eda7889ccf80cbefd8 = L.circleMarker(
+                [33.7437,-115.9938],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#80ffb4",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#80ffb4",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 8.56107670360464,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_ae5657ce13ec4e00b2039032b4e5f3ec);
+            
+    
+            var popup_bf84ae9322054512a4bfbd5c04f64a57 = L.popup({maxWidth: '300'});
+
+            
+                var html_8ec2c03bd23440ea9a8b2780da471a48 = $('<div id="html_8ec2c03bd23440ea9a8b2780da471a48" style="width: 100.0%; height: 100.0%;">Cluster 4, Riverside county</div>')[0];
+                popup_bf84ae9322054512a4bfbd5c04f64a57.setContent(html_8ec2c03bd23440ea9a8b2780da471a48);
+            
+
+            circle_marker_b547f2d0131a42eda7889ccf80cbefd8.bindPopup(popup_bf84ae9322054512a4bfbd5c04f64a57);
+
+            
+        
+    
+            var circle_marker_c74e07cffa724cce952ab56dd4329cad = L.circleMarker(
+                [38.4493,-121.3443],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#80ffb4",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#80ffb4",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 11.515369340102652,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_ae5657ce13ec4e00b2039032b4e5f3ec);
+            
+    
+            var popup_a8bd81c7d0c14548be981f329489b4c2 = L.popup({maxWidth: '300'});
+
+            
+                var html_4095d1575e0f44dc8e00dfd0fe113400 = $('<div id="html_4095d1575e0f44dc8e00dfd0fe113400" style="width: 100.0%; height: 100.0%;">Cluster 4, Sacramento county</div>')[0];
+                popup_a8bd81c7d0c14548be981f329489b4c2.setContent(html_4095d1575e0f44dc8e00dfd0fe113400);
+            
+
+            circle_marker_c74e07cffa724cce952ab56dd4329cad.bindPopup(popup_a8bd81c7d0c14548be981f329489b4c2);
+
+            
+        
+    
+            var circle_marker_5bb6a6bfe0634b43bb86e2aae4d565ef = L.circleMarker(
+                [36.6057,-121.075],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#2adddd",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#2adddd",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.7610436933813975,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_ae5657ce13ec4e00b2039032b4e5f3ec);
+            
+    
+            var popup_4d73dbf531704beeafc4f5732f5e45ba = L.popup({maxWidth: '300'});
+
+            
+                var html_1accf7c91bdd4c8c974b7be7c8d4eb07 = $('<div id="html_1accf7c91bdd4c8c974b7be7c8d4eb07" style="width: 100.0%; height: 100.0%;">Cluster 3, San Benito county</div>')[0];
+                popup_4d73dbf531704beeafc4f5732f5e45ba.setContent(html_1accf7c91bdd4c8c974b7be7c8d4eb07);
+            
+
+            circle_marker_5bb6a6bfe0634b43bb86e2aae4d565ef.bindPopup(popup_4d73dbf531704beeafc4f5732f5e45ba);
+
+            
+        
+    
+            var circle_marker_48be5cc4b7074404a5e0afcbad49b966 = L.circleMarker(
+                [34.8414,-116.1784],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#80ffb4",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#80ffb4",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 11.107537639916377,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_ae5657ce13ec4e00b2039032b4e5f3ec);
+            
+    
+            var popup_cbb4d87ff5ff4db5a71d4940e12ad59e = L.popup({maxWidth: '300'});
+
+            
+                var html_91261f04ef364c8fa6ddf66aa5e7cad1 = $('<div id="html_91261f04ef364c8fa6ddf66aa5e7cad1" style="width: 100.0%; height: 100.0%;">Cluster 4, San Bernardino county</div>')[0];
+                popup_cbb4d87ff5ff4db5a71d4940e12ad59e.setContent(html_91261f04ef364c8fa6ddf66aa5e7cad1);
+            
+
+            circle_marker_48be5cc4b7074404a5e0afcbad49b966.bindPopup(popup_cbb4d87ff5ff4db5a71d4940e12ad59e);
+
+            
+        
+    
+            var circle_marker_b230b87c4dec46feb7812539ed5d9069 = L.circleMarker(
+                [33.0341,-116.7353],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#80ffb4",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#80ffb4",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 14.093584143298482,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_ae5657ce13ec4e00b2039032b4e5f3ec);
+            
+    
+            var popup_47b76be580424e99874cec7677e40318 = L.popup({maxWidth: '300'});
+
+            
+                var html_4cd43c472b1e40b3985f34af162a1821 = $('<div id="html_4cd43c472b1e40b3985f34af162a1821" style="width: 100.0%; height: 100.0%;">Cluster 4, San Diego county</div>')[0];
+                popup_47b76be580424e99874cec7677e40318.setContent(html_4cd43c472b1e40b3985f34af162a1821);
+            
+
+            circle_marker_b230b87c4dec46feb7812539ed5d9069.bindPopup(popup_47b76be580424e99874cec7677e40318);
+
+            
+        
+    
+            var circle_marker_186298a0109c49818c61b12af939535d = L.circleMarker(
+                [37.7562,-122.443],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#d4dd80",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#d4dd80",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 18.464177688374512,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_ae5657ce13ec4e00b2039032b4e5f3ec);
+            
+    
+            var popup_6da8fa796ee945658a389f2a781049db = L.popup({maxWidth: '300'});
+
+            
+                var html_ace8a1dbb3b7415b9209de6e1540e345 = $('<div id="html_ace8a1dbb3b7415b9209de6e1540e345" style="width: 100.0%; height: 100.0%;">Cluster 5, San Francisco county</div>')[0];
+                popup_6da8fa796ee945658a389f2a781049db.setContent(html_ace8a1dbb3b7415b9209de6e1540e345);
+            
+
+            circle_marker_186298a0109c49818c61b12af939535d.bindPopup(popup_6da8fa796ee945658a389f2a781049db);
+
+            
+        
+    
+            var circle_marker_f9443d5fa5fe471ab0adec245f7aac92 = L.circleMarker(
+                [37.9348,-121.2714],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#2adddd",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#2adddd",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 7.237887863633434,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_ae5657ce13ec4e00b2039032b4e5f3ec);
+            
+    
+            var popup_948f24da3327481a9983fe2a4a77a7fc = L.popup({maxWidth: '300'});
+
+            
+                var html_74bf1a5e674647059ff36fc4e953b54e = $('<div id="html_74bf1a5e674647059ff36fc4e953b54e" style="width: 100.0%; height: 100.0%;">Cluster 3, San Joaquin county</div>')[0];
+                popup_948f24da3327481a9983fe2a4a77a7fc.setContent(html_74bf1a5e674647059ff36fc4e953b54e);
+            
+
+            circle_marker_f9443d5fa5fe471ab0adec245f7aac92.bindPopup(popup_948f24da3327481a9983fe2a4a77a7fc);
+
+            
+        
+    
+            var circle_marker_29123330ba50446d8a6d391f934a6aeb = L.circleMarker(
+                [35.3871,-120.4045],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff7e41",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff7e41",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 11.436433810425072,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_ae5657ce13ec4e00b2039032b4e5f3ec);
+            
+    
+            var popup_9e81c5f215c144b195def252920ceaba = L.popup({maxWidth: '300'});
+
+            
+                var html_acff0c905e8245d09e06d7e7220a88e5 = $('<div id="html_acff0c905e8245d09e06d7e7220a88e5" style="width: 100.0%; height: 100.0%;">Cluster 6, San Luis Obispo county</div>')[0];
+                popup_9e81c5f215c144b195def252920ceaba.setContent(html_acff0c905e8245d09e06d7e7220a88e5);
+            
+
+            circle_marker_29123330ba50446d8a6d391f934a6aeb.bindPopup(popup_9e81c5f215c144b195def252920ceaba);
+
+            
+        
+    
+            var circle_marker_e4093d93a5564effab1f130e18616927 = L.circleMarker(
+                [37.4229,-122.329],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#2adddd",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#2adddd",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5.4028228912672365,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_ae5657ce13ec4e00b2039032b4e5f3ec);
+            
+    
+            var popup_3a7958fc43d74e92bb16188be089f5d2 = L.popup({maxWidth: '300'});
+
+            
+                var html_688043d13aef411e8609804d6e57f974 = $('<div id="html_688043d13aef411e8609804d6e57f974" style="width: 100.0%; height: 100.0%;">Cluster 3, San Mateo county</div>')[0];
+                popup_3a7958fc43d74e92bb16188be089f5d2.setContent(html_688043d13aef411e8609804d6e57f974);
+            
+
+            circle_marker_e4093d93a5564effab1f130e18616927.bindPopup(popup_3a7958fc43d74e92bb16188be089f5d2);
+
+            
+        
+    
+            var circle_marker_462f60e397384613bb87853d1820a799 = L.circleMarker(
+                [34.6729,-120.0165],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff7e41",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff7e41",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9.024974414192528,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_ae5657ce13ec4e00b2039032b4e5f3ec);
+            
+    
+            var popup_a9b4b9e6c9e14b17867ebe2f58e204f5 = L.popup({maxWidth: '300'});
+
+            
+                var html_180f15f941fb48b982af7cc0850a16bd = $('<div id="html_180f15f941fb48b982af7cc0850a16bd" style="width: 100.0%; height: 100.0%;">Cluster 6, Santa Barbara county</div>')[0];
+                popup_a9b4b9e6c9e14b17867ebe2f58e204f5.setContent(html_180f15f941fb48b982af7cc0850a16bd);
+            
+
+            circle_marker_462f60e397384613bb87853d1820a799.bindPopup(popup_a9b4b9e6c9e14b17867ebe2f58e204f5);
+
+            
+        
+    
+            var circle_marker_b4d1ff18d8084727b9c5e01b92dacc31 = L.circleMarker(
+                [37.2318,-121.6951],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#80ffb4",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#80ffb4",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 11.140971877911879,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_ae5657ce13ec4e00b2039032b4e5f3ec);
+            
+    
+            var popup_339a6b59a10f4598801a8a5c8b3922ae = L.popup({maxWidth: '300'});
+
+            
+                var html_3861c261f34b4cab87cf27da9547903a = $('<div id="html_3861c261f34b4cab87cf27da9547903a" style="width: 100.0%; height: 100.0%;">Cluster 4, Santa Clara county</div>')[0];
+                popup_339a6b59a10f4598801a8a5c8b3922ae.setContent(html_3861c261f34b4cab87cf27da9547903a);
+            
+
+            circle_marker_b4d1ff18d8084727b9c5e01b92dacc31.bindPopup(popup_339a6b59a10f4598801a8a5c8b3922ae);
+
+            
+        
+    
+            var circle_marker_0cda9b3c906c4c17813aa217c0a6c05e = L.circleMarker(
+                [37.0562,-122.0018],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff7e41",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff7e41",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9.210845108712562,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_ae5657ce13ec4e00b2039032b4e5f3ec);
+            
+    
+            var popup_6f287695c0db4d12ae01290651e23cd4 = L.popup({maxWidth: '300'});
+
+            
+                var html_5137ee8074cd4e82a5958635997a94f6 = $('<div id="html_5137ee8074cd4e82a5958635997a94f6" style="width: 100.0%; height: 100.0%;">Cluster 6, Santa Cruz county</div>')[0];
+                popup_6f287695c0db4d12ae01290651e23cd4.setContent(html_5137ee8074cd4e82a5958635997a94f6);
+            
+
+            circle_marker_0cda9b3c906c4c17813aa217c0a6c05e.bindPopup(popup_6f287695c0db4d12ae01290651e23cd4);
+
+            
+        
+    
+            var circle_marker_9d5caa5d6a16468d8997088e8d7bb566 = L.circleMarker(
+                [40.7637,-122.0405],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#d4dd80",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#d4dd80",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 24.358715594743934,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_ae5657ce13ec4e00b2039032b4e5f3ec);
+            
+    
+            var popup_7283e13aec074821bec118987c729b2c = L.popup({maxWidth: '300'});
+
+            
+                var html_62ce7b02b4554f7c8e5d39c9fb8aa36e = $('<div id="html_62ce7b02b4554f7c8e5d39c9fb8aa36e" style="width: 100.0%; height: 100.0%;">Cluster 5, Shasta county</div>')[0];
+                popup_7283e13aec074821bec118987c729b2c.setContent(html_62ce7b02b4554f7c8e5d39c9fb8aa36e);
+            
+
+            circle_marker_9d5caa5d6a16468d8997088e8d7bb566.bindPopup(popup_7283e13aec074821bec118987c729b2c);
+
+            
+        
+    
+            var circle_marker_9f850a28e7a94103b2a29540679031e1 = L.circleMarker(
+                [41.5927,-122.5404],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff7e41",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff7e41",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 8.516696770348751,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_ae5657ce13ec4e00b2039032b4e5f3ec);
+            
+    
+            var popup_1ab878ce245a4246927eeb3cbeab9be9 = L.popup({maxWidth: '300'});
+
+            
+                var html_d7b6b2119c1d4964ba72621261602b87 = $('<div id="html_d7b6b2119c1d4964ba72621261602b87" style="width: 100.0%; height: 100.0%;">Cluster 6, Siskiyou county</div>')[0];
+                popup_1ab878ce245a4246927eeb3cbeab9be9.setContent(html_d7b6b2119c1d4964ba72621261602b87);
+            
+
+            circle_marker_9f850a28e7a94103b2a29540679031e1.bindPopup(popup_1ab878ce245a4246927eeb3cbeab9be9);
+
+            
+        
+    
+            var circle_marker_63832a0ef15842348ec07d3b839849cf = L.circleMarker(
+                [38.27,-121.9329],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff7e41",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff7e41",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 8.118375854156113,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_ae5657ce13ec4e00b2039032b4e5f3ec);
+            
+    
+            var popup_3b050c5c9443498cbebfbae8a0501bcb = L.popup({maxWidth: '300'});
+
+            
+                var html_90a74082c7114e78a618368494c82a38 = $('<div id="html_90a74082c7114e78a618368494c82a38" style="width: 100.0%; height: 100.0%;">Cluster 6, Solano county</div>')[0];
+                popup_3b050c5c9443498cbebfbae8a0501bcb.setContent(html_90a74082c7114e78a618368494c82a38);
+            
+
+            circle_marker_63832a0ef15842348ec07d3b839849cf.bindPopup(popup_3b050c5c9443498cbebfbae8a0501bcb);
+
+            
+        
+    
+            var circle_marker_82cfda2b37dd41a29d237de457b147fe = L.circleMarker(
+                [38.5283,-122.8874],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff7e41",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff7e41",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9.044995544998432,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_ae5657ce13ec4e00b2039032b4e5f3ec);
+            
+    
+            var popup_fe6fa55642d04bf5b1022129c2d9284b = L.popup({maxWidth: '300'});
+
+            
+                var html_8f3d578d182c41e789b21b872c3eaba1 = $('<div id="html_8f3d578d182c41e789b21b872c3eaba1" style="width: 100.0%; height: 100.0%;">Cluster 6, Sonoma county</div>')[0];
+                popup_fe6fa55642d04bf5b1022129c2d9284b.setContent(html_8f3d578d182c41e789b21b872c3eaba1);
+            
+
+            circle_marker_82cfda2b37dd41a29d237de457b147fe.bindPopup(popup_fe6fa55642d04bf5b1022129c2d9284b);
+
+            
+        
+    
+            var circle_marker_39e101ce53844ac7aab2f0c79c992467 = L.circleMarker(
+                [37.5591,-120.9977],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#d4dd80",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#d4dd80",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 17.611652168505216,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_ae5657ce13ec4e00b2039032b4e5f3ec);
+            
+    
+            var popup_38eded824ccd498c8ed17d88f4b7ab8a = L.popup({maxWidth: '300'});
+
+            
+                var html_b35be6fe553e45b0acae0048e55fb02e = $('<div id="html_b35be6fe553e45b0acae0048e55fb02e" style="width: 100.0%; height: 100.0%;">Cluster 5, Stanislaus county</div>')[0];
+                popup_38eded824ccd498c8ed17d88f4b7ab8a.setContent(html_b35be6fe553e45b0acae0048e55fb02e);
+            
+
+            circle_marker_39e101ce53844ac7aab2f0c79c992467.bindPopup(popup_38eded824ccd498c8ed17d88f4b7ab8a);
+
+            
+        
+    
+            var circle_marker_7c9301b5708f4e5c8aa7b9b613f45d5b = L.circleMarker(
+                [39.0346,-121.6948],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#2adddd",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#2adddd",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": -1.2885531738748313,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_ae5657ce13ec4e00b2039032b4e5f3ec);
+            
+    
+            var popup_d298a19985674340aa7a461e13c1aedb = L.popup({maxWidth: '300'});
+
+            
+                var html_07e205c4464e4eef94b5fd1c47fb39bd = $('<div id="html_07e205c4464e4eef94b5fd1c47fb39bd" style="width: 100.0%; height: 100.0%;">Cluster 3, Sutter county</div>')[0];
+                popup_d298a19985674340aa7a461e13c1aedb.setContent(html_07e205c4464e4eef94b5fd1c47fb39bd);
+            
+
+            circle_marker_7c9301b5708f4e5c8aa7b9b613f45d5b.bindPopup(popup_d298a19985674340aa7a461e13c1aedb);
+
+            
+        
+    
+            var circle_marker_16163b9082674809b4fd6aa3941c24d5 = L.circleMarker(
+                [40.1256,-122.2341],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#2adddd",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#2adddd",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5.011365229526606,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_ae5657ce13ec4e00b2039032b4e5f3ec);
+            
+    
+            var popup_b75edf647b594b31bd698e915d9744d6 = L.popup({maxWidth: '300'});
+
+            
+                var html_e9947c8bc3e84add9f02cce6f59be719 = $('<div id="html_e9947c8bc3e84add9f02cce6f59be719" style="width: 100.0%; height: 100.0%;">Cluster 3, Tehama county</div>')[0];
+                popup_b75edf647b594b31bd698e915d9744d6.setContent(html_e9947c8bc3e84add9f02cce6f59be719);
+            
+
+            circle_marker_16163b9082674809b4fd6aa3941c24d5.bindPopup(popup_b75edf647b594b31bd698e915d9744d6);
+
+            
+        
+    
+            var circle_marker_14350213e27d43f7a39bbb88bd86849a = L.circleMarker(
+                [40.6507,-123.1126],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 15.766408791971461,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_ae5657ce13ec4e00b2039032b4e5f3ec);
+            
+    
+            var popup_bb39c562ac02487baf96e176957ccd7a = L.popup({maxWidth: '300'});
+
+            
+                var html_8a8279b3c2634b028bb7310992927f29 = $('<div id="html_8a8279b3c2634b028bb7310992927f29" style="width: 100.0%; height: 100.0%;">Cluster 1, Trinity county</div>')[0];
+                popup_bb39c562ac02487baf96e176957ccd7a.setContent(html_8a8279b3c2634b028bb7310992927f29);
+            
+
+            circle_marker_14350213e27d43f7a39bbb88bd86849a.bindPopup(popup_bb39c562ac02487baf96e176957ccd7a);
+
+            
+        
+    
+            var circle_marker_a080d246fc3841e38c9f1c85d4a56b31 = L.circleMarker(
+                [36.2201,-118.8005],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff7e41",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff7e41",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9.7751832940996,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_ae5657ce13ec4e00b2039032b4e5f3ec);
+            
+    
+            var popup_74514c98bfa24fd0a75a948b2d48f480 = L.popup({maxWidth: '300'});
+
+            
+                var html_1d4895f96d2c479da236435c27cd6b1b = $('<div id="html_1d4895f96d2c479da236435c27cd6b1b" style="width: 100.0%; height: 100.0%;">Cluster 6, Tulare county</div>')[0];
+                popup_74514c98bfa24fd0a75a948b2d48f480.setContent(html_1d4895f96d2c479da236435c27cd6b1b);
+            
+
+            circle_marker_a080d246fc3841e38c9f1c85d4a56b31.bindPopup(popup_74514c98bfa24fd0a75a948b2d48f480);
+
+            
+        
+    
+            var circle_marker_be084513d30c40f5ab905b27b462f5b9 = L.circleMarker(
+                [38.0276,-119.9548],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff7e41",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff7e41",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 8.777016854975642,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_ae5657ce13ec4e00b2039032b4e5f3ec);
+            
+    
+            var popup_0a99d75743804a69a0dadd11a27cee16 = L.popup({maxWidth: '300'});
+
+            
+                var html_80bc67600ba5499b8942878a076344b0 = $('<div id="html_80bc67600ba5499b8942878a076344b0" style="width: 100.0%; height: 100.0%;">Cluster 6, Tuolumne county</div>')[0];
+                popup_0a99d75743804a69a0dadd11a27cee16.setContent(html_80bc67600ba5499b8942878a076344b0);
+            
+
+            circle_marker_be084513d30c40f5ab905b27b462f5b9.bindPopup(popup_0a99d75743804a69a0dadd11a27cee16);
+
+            
+        
+    
+            var circle_marker_216806867c794388a7d7fe2261015513 = L.circleMarker(
+                [34.4565,-119.0836],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff7e41",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff7e41",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 8.748915681252715,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_ae5657ce13ec4e00b2039032b4e5f3ec);
+            
+    
+            var popup_a4d5864817004c9f85e73a46233a1847 = L.popup({maxWidth: '300'});
+
+            
+                var html_7c3117dcf9354528add5d9f112b4dc22 = $('<div id="html_7c3117dcf9354528add5d9f112b4dc22" style="width: 100.0%; height: 100.0%;">Cluster 6, Ventura county</div>')[0];
+                popup_a4d5864817004c9f85e73a46233a1847.setContent(html_7c3117dcf9354528add5d9f112b4dc22);
+            
+
+            circle_marker_216806867c794388a7d7fe2261015513.bindPopup(popup_a4d5864817004c9f85e73a46233a1847);
+
+            
+        
+    
+            var circle_marker_e87c82ea9a56437fb583a3be329e2fcb = L.circleMarker(
+                [38.6866,-121.9016],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#2adddd",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#2adddd",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.4469910194613256,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_ae5657ce13ec4e00b2039032b4e5f3ec);
+            
+    
+            var popup_b4109f0b768743c2a189f606db40b7d9 = L.popup({maxWidth: '300'});
+
+            
+                var html_e002f1a931794569b312d850b5de231f = $('<div id="html_e002f1a931794569b312d850b5de231f" style="width: 100.0%; height: 100.0%;">Cluster 3, Yolo county</div>')[0];
+                popup_b4109f0b768743c2a189f606db40b7d9.setContent(html_e002f1a931794569b312d850b5de231f);
+            
+
+            circle_marker_e87c82ea9a56437fb583a3be329e2fcb.bindPopup(popup_b4109f0b768743c2a189f606db40b7d9);
+
+            
+        
+    
+            var circle_marker_e1fcc0b94962427ba475ef712f1ad0c7 = L.circleMarker(
+                [39.269,-121.3513],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#d4dd80",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#d4dd80",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 25.13781174041663,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_ae5657ce13ec4e00b2039032b4e5f3ec);
+            
+    
+            var popup_147f240645504edda4d5c4c7545bd4fd = L.popup({maxWidth: '300'});
+
+            
+                var html_a0bd8509d33f4b13aa036a7713e636d5 = $('<div id="html_a0bd8509d33f4b13aa036a7713e636d5" style="width: 100.0%; height: 100.0%;">Cluster 5, Yuba county</div>')[0];
+                popup_147f240645504edda4d5c4c7545bd4fd.setContent(html_a0bd8509d33f4b13aa036a7713e636d5);
+            
+
+            circle_marker_e1fcc0b94962427ba475ef712f1ad0c7.bindPopup(popup_147f240645504edda4d5c4c7545bd4fd);
+
+            
+        
+</script>
